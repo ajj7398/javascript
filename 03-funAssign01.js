@@ -1,29 +1,44 @@
-function square(num) {
-    console.log("Given no:", num);
-    var result = num * num;
-    console.log("Result is:", result);
-  }
-  square(9);
-  square(11);
-  square(25);
-  square(1023);
-  console.log(
-    "===================================================="
-  );
-  function multiply(n1, n2, n3) {
-    console.log("Given no. are:", n1, n2, n3);
-    var result = n1 * n2 * n3;
-    return result;
-  }
-  var returnValue = multiply(5, 5, 5);
-  console.log("Multiplication is:", returnValue);
-  console.log("============================================");
-  function swap(n1,n2){
-      console.log("Before Swap", "n1->", n1, " n2->", n2);
-      var temp = n1;
-      n1 = n2;
-      n2 = temp;
-      console.log("After Swap", "n1->", n1, " n2->", n2);
-  }
-  swap(100, 200);
-  swap("Jenny", "Menny");
+console.log("====================Step 1====================");
+
+function greet() {
+  console.log("Hello my Name is Ajay");
+}
+greet();
+function printMessage() {
+  console.log("Lets learn JS together.");
+}
+printMessage();
+console.log("====================Step 2====================");
+function personalDetails(firstName, lastName, collegeName) {
+  console.log("First Name: ", firstName);
+  console.log("Last Name: ", lastName);
+  console.log("College Name: ", collegeName);
+}
+personalDetails("Ajay", "Kushwaha");
+console.log("====================Step 3====================");
+function swapValues(v1, v2) {
+  console.log("Before Swap value: ");
+  console.log("Value1 -->", v1);
+  console.log("Value2 -->", v2);
+  let temp = v1;
+  v1 = v2;
+  v2 = temp;
+
+  console.log("After Swap value:");
+  console.log("Value1 -->", v1);
+  console.log("Value2 -->", v2);
+}
+swapValues("Virat", "Anushka");
+console.log("----------------");
+swapValues(1000, 2000);
+console.log("====================Step 4====================");
+function addThreeValues(value1, value2, value3) {
+  console.log("Value1:", value1);
+  console.log("Value2:", value2);
+  console.log("Value3:", value3);
+  var result = value1 + value2 + value3;
+  console.log("Sum of the three values:", result);
+}
+
+addThreeValues(10.23, 600, 40);
+addThreeValues("Hello", "Good", "Morning");
